@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {},
     boxShadow: {
-      'draggable-me': '20px 30px 150px 10px rgba(2, 6, 24, 0.8);', 
+      'draggable-me': '20px 30px 150px 10px rgba(2, 6, 24, 0.8);',
+      'photo-glow': '-3px 4px 100px 31px rgba(59, 130, 246, 0.5);', 
     }
   },
   plugins: [],

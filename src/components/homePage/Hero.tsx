@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { animate } from "framer-motion";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
-import { FaSquareInstagram } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
 
 import DraggableMe from "@/components/homePage/Draggable";
+import Socials from "@/components/Socials";
 
 const Hero = ({ handleScrollDownClick }: { handleScrollDownClick: () => void; }) => {
   const [bgColr1, setBgColr1] = useState("#03bafc");
@@ -169,11 +167,7 @@ const Hero = ({ handleScrollDownClick }: { handleScrollDownClick: () => void; })
         <div className="text-3xl font-mono mt-4">
           Musician, Web Developer, Author
         </div>
-        <div className="text-3xl font-mono mt-4 flex justify-between w-[15vw] bg-teal-900 rounded-full p-2 px-4">
-          <a className="hover:cursor-pointer image-button" href="https://www.instagram.com/achintya_nigam/?hl=en"><FaSquareInstagram size={40}/></a>
-          <a className="hover:cursor-pointer image-button" href="https://www.linkedin.com/in/achintya-nigam-5a1558251/"><FaLinkedin size={40}/></a>
-          <a className="hover:cursor-pointer image-button" href="https://x.com/achintyawrites"><FaSquareXTwitter size={40}/></a>
-        </div>
+      <Socials />
 
 
       </div>
