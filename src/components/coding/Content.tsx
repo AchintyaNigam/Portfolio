@@ -3,9 +3,10 @@ import React from 'react';
 import Image from 'next/image';
 import { motion } from "motion/react"
 
-import MeCoding from '../../../public/MeCoding.jpg'
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
-import Socials from '@/components/Socials';
+import MeCoding from '../../../public/MeCoding.jpg'
 
 const Content = () => {
   return (
@@ -25,13 +26,20 @@ const Content = () => {
           </div>
         </div>
         <div className='flex flex-col basis-2/3 text-white p-12 justify-center '>
-          <Socials />
+          <div className="text-3xl font-mono mt-4 flex justify-between w-[8vw] bg-blue-900 rounded-full p-2 px-4">
+                      <a className="hover:cursor-pointer image-button" href="https://www.instagram.com/achintya_nigam/?hl=en"><FaGithub size={40}/></a>
+                      <a className="hover:cursor-pointer image-button" href="https://www.linkedin.com/in/achintya-nigam-5a1558251/"><FaLinkedin size={40}/></a>
+                      
+              </div>
           <h1 className='text-7xl font-bold pt-4'>Achintya Nigam</h1>
           <h2 className='pb-4 text-2xl text-gray-400'>Mumbai, India</h2>
           <p className='font-mono text-xl'>I am a full-stack web developer who enjoys building applications from start to finish. 
             I work on both the backend and frontend, creating seamless experiences for users and ensuring the underlying systems run smoothly.
              My work involves developing APIs, managing databases, and implementing responsive interfaces that are easy to use. I focus on writing clean, efficient code and solving problems with practical solutions.</p>
         </div>
+      </div>
+      <div className='flex flex-col text-white p-8 text-7xl'>
+        Experience
       </div>
     </motion.div>
   </div>
