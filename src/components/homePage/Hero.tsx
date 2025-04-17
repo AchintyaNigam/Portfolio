@@ -155,23 +155,25 @@ const Hero = ({ handleScrollDownClick }: { handleScrollDownClick: () => void; })
         background: `linear-gradient(to right, ${bgColr1}, ${bgColr2})`,
       }}
     >
+
       <DraggableMe />
       <div className="flex flex-col items-center justify-center h-screen text-white">
-        <div className="text-8xl font-serif italic">I am</div>
+        <div className="lg:text-8xl font-serif italic text-2xl">I am</div>
 
-        <div className="mt-4 text-9xl font-mono font-bold hover:tracking-widest duration-300 hover:cursor-pointer flex flex-row">
+        <div className="mt-4 lg:text-9xl font-mono font-bold hover:tracking-widest duration-300 hover:cursor-pointer flex flex-row
+                        text-3xl">
           <h1 id="h1">ACHINTYA</h1>
           <h1 id="space">&nbsp;</h1>
           <h1 id="h2">NIGAM</h1>
         </div>
-        <div className="text-3xl font-mono mt-4">
+        <div className="lg:text-3xl font-mono mt-4 sm:text-xl">
           Musician, Web Developer, Author
         </div>
       <Socials />
 
 
       </div>
-      <div className="text-2xl -mt-20 flex flex-col items-center text-white">
+      <div className="text-2xl -mt-32 flex flex-col items-center text-white">
           Scroll Down
           <div className="hover:cursor-pointer" onClick={() => handleScrollDownClick()}>
             <IoIosArrowDropdownCircle />

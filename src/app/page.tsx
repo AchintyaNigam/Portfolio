@@ -5,13 +5,12 @@ import { AnimatePresence, motion } from "motion/react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/homePage/Hero";
 import MainMenu from "@/components/homePage/MainMenu";
-import { main } from "motion/react-client";
 
 export default function Home() {
   const [showHeader, setShowHeader] = useState(true);
   const [scrollDown, setScrollDown] = useState(false);
 
-  const heroRef = useRef<HTMLDivElement>(null);
+  const heroRef = useRef<HTMLDivElement>(null); 
   const mainMenuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -73,7 +72,7 @@ export default function Home() {
       <AnimatePresence>
         {showHeader && (
           <motion.div
-            className="z-10 fixed"
+            className="z-10 fixed w-full"
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -100, opacity: 0 }}
@@ -87,9 +86,7 @@ export default function Home() {
         
       <div className="relative flex-col snap-y snap-mandatory scroll-smooth">
         <div className="snap-end" ref={heroRef}>
-
           <Hero handleScrollDownClick={handleScrollDownClick} />
-
         </div>
         <div className="snap-end" ref={mainMenuRef}>
           <MainMenu />

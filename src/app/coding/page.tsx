@@ -12,11 +12,12 @@ const Coding = () => {
 
   return (
     <div className='absolute h-screen w-screen bg-black overflow-hidden'>
+
       <Navbar />
       <div className='flex h-full w-screen bg-black'>
         <Content />
 
-        <div className='z-0 h-full w-[30vw]'>
+        <div className='z-0 h-full w-[30vw] hidden lg:block'>
             {/* <Spline
               scene="https://prod.spline.design/5znZiJZDH3v7yC4z/scene.splinecode"
               /> */}

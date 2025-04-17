@@ -50,7 +50,9 @@ const DraggableMe = () => {
 
   return (
     <div
-        className={`absolute bg-transparent w-64 h-64 flex border-8 border-transparent items-center justify-center rounded-full cursor-grab transition-transform duration-100 hover:border-8 hover:border-solid hover:border-blue-400 ${
+        className={` absolute bg-transparent w-64 h-64 lg:flex border-8 border-transparent items-center justify-center rounded-full cursor-grab transition-transform duration-100 hover:border-8 hover:border-solid hover:border-blue-400 
+                hidden    
+          ${
         isActive ? "scale-125 cursor-grabbing shadow-draggable-me" : ""
       }`}
       onMouseDown={handleMouseDown}
