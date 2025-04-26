@@ -38,7 +38,7 @@ const Hero = ({ handleScrollDownClick }: { handleScrollDownClick: () => void }) 
     const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const firstName = "ACHINTYA";
 
-    let audio = new Audio("/typewriter.mp3");
+    const audio = new Audio("/typewriter.mp3");
 
     const animateName = () => {
       if (!h1) return;

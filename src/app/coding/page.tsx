@@ -1,8 +1,8 @@
 'use client';
 
 import React from 'react';
-import { motion } from 'motion/react';
-import Spline from '@splinetool/react-spline/next';
+// import { motion } from 'motion/react';
+// import Spline from '@splinetool/react-spline/next';
 
 
 import Navbar from '@/components/Navbar';

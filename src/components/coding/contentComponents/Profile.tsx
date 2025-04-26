@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import { motion } from "motion/react"
 
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
