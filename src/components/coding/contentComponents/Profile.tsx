@@ -10,12 +10,12 @@ import LightningRod from '@/components/coding/LightningRod';
 
 const Profile = () => {
   return (
-    <div className='flex flex-row '>
+    <div className='flex flex-row'>
     <div className='pl-8 pt-8 flex lg:basis-1/3 '>
       <div className=' lg:block hidden rounded-full overflow-hidden w-64 h-64 justify-center items-center m-8 border-4 border-blue-300 shadow-photo-glow'>
         <Image src={MeCoding} width={1000} height={1000} alt='Me Coding' className='object-cover'/>
       </div>
-        <div className='lg:hidden block'>
+        <div className='lg:hidden block h-full'>
             <LightningRod />
         </div>
     </div>
